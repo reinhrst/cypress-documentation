@@ -69,8 +69,10 @@ To include code before your test files, set the
 default, [`supportFile`](/guides/references/configuration#Folders-Files) is set
 to look for one of the following files:
 
-- `cypress/support/index.js`
-- `cypress/support/index.ts`
+- `cypress/support/component.js`
+- `cypress/support/e2e.js`
+- `cypress/support/component.ts`
+- `cypress/support/e2e.ts`
 - `cypress/support/index.coffee`
 
 Just like with your test files, the
@@ -851,9 +853,9 @@ one of the following:
 
 **You visit the Cypress proxy URL outside of a Cypress browser.**
 
-- Don't copy the URL you see when launching a Cypress browser from the
-  Cypress App and open it in a non-Cypress browser. If you want to run your
-  tests in a different browser, follow the instructions in the
+- Don't copy the URL you see when launching a Cypress browser from the Cypress
+  App and open it in a non-Cypress browser. If you want to run your tests in a
+  different browser, follow the instructions in the
   [Cross Browser Testing](/guides/guides/cross-browser-testing) guide.
 
 ### <Icon name="exclamation-triangle" color="red"></Icon> Cannot connect to API server
