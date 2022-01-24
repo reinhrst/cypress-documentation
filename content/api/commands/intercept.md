@@ -542,7 +542,7 @@ cy.wait('@headers')
 
 You can add, modify or delete a header to all outgoing requests using a
 `beforeEach()` in the
-[supportFile](/guides/core-concepts/writing-and-organizing-tests#Support-file).
+[supportFile](/guides/core-concepts/writing-and-organizing-tests#support-file).
 
 ```js
 beforeEach(() => {
@@ -672,7 +672,7 @@ cy.intercept('/users', (req) => {
 #### Throttle or delay response all incoming responses
 
 You can throttle or delay all incoming responses using a `beforeEach()` in the
-[supportFile](/guides/core-concepts/writing-and-organizing-tests#Support-file).
+[supportFile](/guides/core-concepts/writing-and-organizing-tests#support-file).
 
 ```js
 // Throttle API responses to simulate real-world conditions

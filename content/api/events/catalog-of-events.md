@@ -184,9 +184,9 @@ single test.
 #### To turn off all uncaught exception handling
 
 ```javascript
-// likely want to do this in a support file
+// you'll like want to do this in a supportFile
 // so it's applied to all spec files
-// cypress/support/e2e.js or cypress/support/component.js
+// https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#support-file
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
@@ -198,9 +198,9 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 ### To conditionally turn off uncaught exception handling for a certain error
 
 ```javascript
-// likely want to do this in a support file
+// likely want to do this in a supportFile
 // so it's applied to all spec files
-// cypress/support/e2e.js or cypress/support/component.js
+// https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#support-file
 Cypress.on('uncaught:exception', (err, runnable) => {
   // we expect a 3rd party library error with message 'list not defined'
   // and don't want to fail the test so we return false
@@ -215,9 +215,9 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 ### To conditionally turn off uncaught exception handling unhandled promise rejections
 
 ```javascript
-// likely want to do this in a support file
+// likely want to do this in a supportFile
 // so it's applied to all spec files
-// cypress/support/e2e.js or cypress/support/component.js
+// https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#support-file
 Cypress.on('uncaught:exception', (err, runnable, promise) => {
   // when the exception originated from an unhandled promise
   // rejection, the promise is provided as a third argument
@@ -260,7 +260,7 @@ it('is doing something very important', (done) => {
 
 ```javascript
 // if you want to debug when any test fails
-// You likely want to put this in a support file,
+// you'll likely want to put this in a supportFile,
 // or at the top of an individual spec file
 Cypress.on('fail', (error, runnable) => {
   debugger

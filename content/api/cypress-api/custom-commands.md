@@ -11,7 +11,7 @@ defined below.
 A great place to define or overwrite commands is in your
 `cypress/support/commands.js` file, since it is loaded before any test files are
 evaluated via an import statement in the
-[supportFile](/guides/core-concepts/writing-and-organizing-tests#Support-file).
+[supportFile](/guides/core-concepts/writing-and-organizing-tests#support-file).
 
 </Alert>
 

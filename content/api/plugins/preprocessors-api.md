@@ -3,7 +3,7 @@ title: Preprocessors API
 ---
 
 A preprocessor is the plugin responsible for preparing a
-[support file](/guides/core-concepts/writing-and-organizing-tests#Support-file)
+[support file](/guides/core-concepts/writing-and-organizing-tests#support-file)
 or a [test file](/guides/core-concepts/writing-and-organizing-tests#Test-files)
 for the browser.
 
